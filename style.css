@@ -1261,7 +1261,7 @@ top:50% !important;
 transform:translate(-50%,-50%) !important;
 
 word-break:normal !important;
-overflow-wrap:break-word !important;
+overflow-wrap:break-word 
 }
 /* MEMORY */
 
