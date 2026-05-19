@@ -1242,7 +1242,21 @@ height:110px;
 .count-box h3{
 font-size:2.5rem;
 }
+.popup-message{
+width:85%;
+max-width:320px;
+padding:25px 20px;
+font-size:1.1rem;
+line-height:1.6;
+text-align:center;
+border-radius:25px;
+}
 
+.popup-message h2,
+.popup-message p{
+word-break:normal;
+overflow-wrap:break-word;
+}
 /* MEMORY */
 
 .memories-section,
