@@ -834,84 +834,6 @@ transform:scale(1.03);
 }
 }
 
-/* MOBILE */
-
-@media(max-width:768px){
-
-.birthday-text{
-font-size:40px !important;
-line-height:1.2;
-text-align:center;
-padding:0 15px;
-word-break:break-word;
-}
-
-.main-name{
-font-size:56px !important;
-line-height:1.1;
-text-align:center;
-padding:0 10px;
-word-break:break-word;
-}
-
-.hero-message{
-font-size:15px;
-line-height:1.9;
-padding:0 22px;
-}
-
-.tagline{
-font-size:14px;
-line-height:1.7;
-padding:0 20px;
-}
-
-.hero{
-overflow:hidden;
-padding-top:120px;
-}
-.main-name{
-font-size:48px !important;
-line-height:1.1;
-padding:0 12px;
-word-break:break-word;
-overflow-wrap:break-word;
-}
-
-.cake{
-width:260px !important;
-height:170px !important;
-margin:auto;
-}
-
-.cake-text{
-font-size:22px !important;
-line-height:1.4;
-}
-
-.candles{
-top:-45px;
-gap:28px;
-}
-
-.candle{
-height:55px;
-}
-
-.knife{
-width:120px !important;
-right:-25px !important;
-top:120px !important;
-}
-
-#celebrateBtn{
-width:85%;
-max-width:300px;
-font-size:15px;
-padding:16px 20px;
-}
-}
-
 /* CUT MESSAGE */
 
 .cut-message{
@@ -955,249 +877,312 @@ opacity:0;
 }
 }
 
-/* RESPONSIVE */
-
-@media(max-width:768px){
-
-nav{
-padding:20px;
-}
-
-.birthday-text{
-font-size:2.5rem;
-}
-
-.main-name{
-font-size:4rem;
-}
-
-.cake{
-width:320px;
-height:200px;
-}
-
-.cake-text{
-font-size:1.6rem;
-}
-
-.knife{
-display:none;
-}
-
-.memories-section h1,
-.wish-section h1,
-.final-section h1{
-font-size:2.5rem;
-}
-
-.gallery{
-grid-template-columns:1fr;
-}
-
-.gallery img{
-height:280px;
-}
-
-.wish-box{
-flex-direction:column;
-}
-
-.wish-box input{
-width:100%;
-}
-
-.final-section h2{
-font-size:2rem;
-}
-
-.popup-content h1{
-font-size:5rem;
-font-family:'Orbitron',sans-serif;
-font-weight:900;
-letter-spacing:6px;
-
-display:flex;
-justify-content:center;
-align-items:center;
-gap:25px;
-
-background:none;
--webkit-background-clip:unset;
--webkit-text-fill-color:unset;
-
-color:#ffffff;
-
-text-shadow:
-0 0 10px rgba(255,255,255,0.3),
-0 0 25px rgba(255,255,255,0.2);
-
-margin-bottom:20px;
-position:relative;
-z-index:2;
-}
 /* =========================
    MOBILE RESPONSIVE
 ========================= */
 
 @media(max-width:768px){
 
+body{
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
 nav{
-padding:18px 20px;
+padding:18px 16px;
 }
 
 .logo{
-font-size:28px;
+font-size:2rem;
 }
 
 .music-btn{
 padding:12px 22px;
-font-size:14px;
+font-size:1rem;
 }
 
+/* HERO */
+
 .hero{
-padding:140px 20px 80px;
+padding:70px 16px 40px;
 min-height:auto;
 }
 
-.popup-content{
-width:92%;
-padding:40px 20px;
-border-radius:30px;
-}
-
-.popup-content h1{
-font-size:48px;
-line-height:1.2;
-}
-
-.popup-content h2{
-font-size:72px;
-}
-
-.popup-content p{
-font-size:18px;
-line-height:1.7;
-}
-
-.popup-countdown{
-gap:12px;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.count-box{
-width:110px;
-height:110px;
-}
-
-.count-box h3{
-font-size:42px;
-}
-
-.count-box p{
-font-size:18px;
-}
-
 .birthday-text{
-font-size:68px;
-line-height:1.2;
+font-size:4rem;
+line-height:1.1;
+letter-spacing:2px;
 text-align:center;
+word-break:break-word;
 }
 
 .main-name{
-font-size:90px;
-text-align:center;
-}
-
-.hero-message{
-font-size:20px;
-line-height:1.8;
-padding:0 10px;
+font-size:5.2rem;
+line-height:1;
+margin-top:20px;
+word-break:break-word;
 }
 
 .tagline{
-font-size:18px;
+font-size:1rem;
+line-height:1.8;
+letter-spacing:2px;
+padding:0 10px;
 }
 
+.hero-message{
+font-size:1.05rem;
+line-height:2;
+padding:0 10px;
+margin-top:25px;
+}
+
+/* FLOATING EMOJIS */
+
+.floating-emoji{
+font-size:24px !important;
+opacity:0.45;
+z-index:0;
+}
+
+/* CAKE AREA */
+
+.cake-area{
+margin-top:50px;
+}
+
+/* CAKE */
+
 .cake{
-width:300px;
-height:190px;
+width:92%;
+max-width:320px;
+height:210px;
+border-radius:25px 25px 80px 80px;
+}
+
+.cake-top{
+height:35px;
+top:-18px;
 }
 
 .cake-text{
-font-size:28px;
+font-size:2rem;
+top:85px;
+line-height:1.5;
+padding:0 10px;
 }
+
+/* CANDLES */
+
+.candles{
+top:-70px;
+gap:28px;
+}
+
+.candle{
+width:13px;
+height:58px;
+}
+
+/* KNIFE */
 
 .knife{
-right:-40px;
-width:150px;
+display:block;
+width:120px;
+height:12px;
+right:-20px;
+top:105px;
+z-index:10;
 }
+
+/* BUTTON */
 
 #celebrateBtn{
-padding:18px 35px;
-font-size:16px;
-width:90%;
-max-width:320px;
+margin-top:40px;
+width:92%;
+max-width:350px;
+padding:18px 20px;
+font-size:1rem;
 }
 
-.memories-section,
-.wish-section,
-.final-section{
-padding:80px 20px;
+/* MEMORIES */
+
+.memories-section{
+padding:80px 16px;
 }
 
-.memories-section h1,
-.wish-section h1,
-.final-section h1{
-font-size:54px;
-line-height:1.3;
-text-align:center;
+.memories-section h1{
+font-size:3rem;
+line-height:1.2;
 }
+
+.memories-section p{
+font-size:1rem;
+margin-top:12px;
+}
+
+/* GALLERY */
 
 .gallery{
 grid-template-columns:1fr;
-gap:20px;
+gap:22px;
+margin-top:45px;
 }
 
 .gallery img{
-height:300px;
+height:250px;
+border-radius:24px;
+}
+
+/* WISH SECTION */
+
+.wish-section{
+padding:80px 16px;
+}
+
+.wish-section h1{
+font-size:3rem;
+line-height:1.2;
 }
 
 .wish-box{
 flex-direction:column;
-gap:20px;
+gap:18px;
+margin-top:35px;
 }
 
 .wish-box input{
 width:100%;
+padding:18px 20px;
+font-size:1rem;
 }
 
 .wish-box button{
 width:100%;
+padding:18px;
+font-size:1rem;
 }
 
+#wishContainer{
+padding:0;
+grid-template-columns:1fr;
+}
+
+/* FINAL SECTION */
+
 .final-section{
-flex-direction:column;
-gap:30px;
-text-align:center;
+padding:80px 16px;
+min-height:auto;
+}
+
+.final-section h1{
+font-size:3.5rem;
+line-height:1.2;
+letter-spacing:2px;
 }
 
 .final-section p{
-font-size:20px;
-line-height:1.8;
+font-size:1.05rem;
+line-height:2;
+margin-top:15px;
 }
 
 .final-section h2{
-font-size:42px;
+font-size:2rem;
+margin-top:20px;
 }
+
+/* FINAL EMOJIS */
 
 .final-emoji{
-font-size:40px;
+font-size:24px;
+opacity:0.5;
 }
 
-.floating-emoji{
-font-size:26px;
+/* POPUP */
+
+.popup-content{
+padding:45px 18px;
+border-radius:30px;
+width:94%;
+}
+
+/* POPUP COUNTDOWN */
+
+.popup-countdown{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:18px;
+margin-bottom:35px;
+}
+
+.count-box{
+width:120px;
+height:120px;
+margin:auto;
+border-radius:28px;
+}
+
+.count-box h3{
+font-size:3rem;
+}
+
+.count-box p{
+font-size:0.95rem;
+letter-spacing:2px;
+}
+
+/* POPUP HAPPY BIRTHDAY */
+
+.popup-content h1{
+font-size:3.3rem;
+line-height:1.2;
+letter-spacing:2px;
+display:block;
+text-align:center;
+}
+
+/* POPUP NAME */
+
+.popup-content h2{
+font-size:5rem;
+line-height:1;
+letter-spacing:2px;
+margin-top:20px;
+}
+
+/* POPUP MESSAGE */
+
+.popup-content p{
+font-size:1rem;
+line-height:1.9;
+padding:0 8px;
+}
+
+/* POPUP BUTTON */
+
+.popup-content button{
+width:90%;
+max-width:320px;
+padding:18px 20px;
+font-size:1rem;
+}
+
+/* CUT MESSAGE */
+
+.cut-message{
+width:90%;
+font-size:1rem;
+padding:22px;
+line-height:1.8;
+}
+
+/* CURSOR */
+
+.cursor-glow{
+display:none;
 }
 
 }
-}
+
