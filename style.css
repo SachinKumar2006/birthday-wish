@@ -870,7 +870,46 @@ padding:0 20px;
 overflow:hidden;
 padding-top:120px;
 }
+.main-name{
+font-size:48px !important;
+line-height:1.1;
+padding:0 12px;
+word-break:break-word;
+overflow-wrap:break-word;
+}
 
+.cake{
+width:260px !important;
+height:170px !important;
+margin:auto;
+}
+
+.cake-text{
+font-size:22px !important;
+line-height:1.4;
+}
+
+.candles{
+top:-45px;
+gap:28px;
+}
+
+.candle{
+height:55px;
+}
+
+.knife{
+width:120px !important;
+right:-25px !important;
+top:120px !important;
+}
+
+#celebrateBtn{
+width:85%;
+max-width:300px;
+font-size:15px;
+padding:16px 20px;
+}
 }
 
 /* CUT MESSAGE */
