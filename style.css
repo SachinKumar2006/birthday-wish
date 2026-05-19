@@ -954,132 +954,253 @@ margin-bottom:20px;
 position:relative;
 z-index:2;
 }
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
 /* =========================================
-   MOBILE CAKE FIX
+   FINAL MOBILE PERFECT FIX
 ========================================= */
 
 @media screen and (max-width:768px){
 
-.cake-area{
-position:relative;
-display:flex;
-justify-content:center;
-align-items:center;
-margin-top:50px;
-margin-bottom:30px;
-width:100%;
+body{
+overflow-x:hidden;
 }
 
-/* FULL CAKE */
+/* HERO SECTION */
 
-.cake{
-position:relative;
-width:280px;
-height:220px;
-background:linear-gradient(180deg,#5f0099,#2b003d);
-border-radius:30px 30px 80px 80px;
-display:flex;
-justify-content:center;
-align-items:center;
-box-shadow:
-0 0 30px rgba(255,170,0,.45),
-0 0 70px rgba(255,170,0,.2);
+.hero{
+padding:40px 14px 30px;
 overflow:hidden;
 }
 
-/* TOP CREAM */
+/* HAPPY BIRTHDAY */
 
-.cake-top{
-position:absolute;
-top:-12px;
-left:0;
-width:100%;
-height:28px;
-background:linear-gradient(90deg,#ffe66d,#ffb300);
-border-radius:50%;
+.birthday-text{
+font-size:2.8rem !important;
+line-height:1.05;
+letter-spacing:1px;
+word-break:normal;
+overflow-wrap:normal;
+white-space:normal;
+text-align:center;
+max-width:100%;
 }
 
-/* TEXT */
+/* SACHIN */
+
+.main-name{
+font-size:4rem !important;
+line-height:1;
+word-break:normal;
+overflow-wrap:normal;
+white-space:normal;
+max-width:100%;
+text-align:center;
+margin-top:20px;
+}
+
+/* TAGLINE */
+
+.tagline{
+font-size:0.95rem;
+line-height:1.8;
+padding:0 10px;
+margin-top:18px;
+}
+
+/* MESSAGE */
+
+.hero-message{
+font-size:1rem;
+line-height:1.8;
+padding:0 12px;
+margin-top:20px;
+}
+
+/* CAKE */
+
+.cake-area{
+margin-top:40px;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+}
+
+.cake{
+width:280px;
+height:190px;
+border-radius:25px 25px 70px 70px;
+position:relative;
+}
+
+.cake-top{
+height:28px;
+top:-14px;
+}
 
 .cake-text{
-position:absolute;
-top:110px;
-left:50%;
-transform:translateX(-50%);
-width:100%;
-text-align:center;
 font-size:1.7rem;
+top:78px;
 line-height:1.4;
-color:#ffe066;
-padding:0 10px;
 }
 
 /* CANDLES */
 
 .candles{
-position:absolute;
-top:35px;
-left:50%;
-transform:translateX(-50%);
-display:flex;
+top:-60px;
 gap:24px;
 }
 
 .candle{
+height:50px;
 width:16px;
-height:58px;
-background:white;
-border-radius:20px;
-position:relative;
-}
-
-.flame{
-position:absolute;
-top:-18px;
-left:50%;
-transform:translateX(-50%);
-width:22px;
-height:22px;
-background:orange;
-border-radius:50%;
-box-shadow:
-0 0 15px orange,
-0 0 30px gold;
 }
 
 /* KNIFE */
 
 .knife{
-position:absolute;
+display:block !important;
 width:110px;
 height:10px;
-background:white;
-border-radius:20px;
-top:130px;
-right:-30px;
-transform:rotate(-20deg);
-z-index:100;
-display:block !important;
-}
-
-/* HANDLE */
-
-.knife::after{
-content:"";
-position:absolute;
-right:-15px;
-top:-10px;
-width:30px;
-height:30px;
-background:#5a2d00;
-border-radius:10px;
+right:-10px;
+top:110px;
+z-index:20;
 }
 
 /* BUTTON */
 
 #celebrateBtn{
-margin-top:40px;
+width:90%;
+max-width:320px;
+padding:18px;
+font-size:1rem;
+margin-top:35px;
+border-radius:50px;
+}
+
+/* COUNTDOWN */
+
+.popup-countdown{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+justify-items:center;
+}
+
+.count-box{
+width:110px;
+height:110px;
+}
+
+.count-box h3{
+font-size:2.5rem;
+}
+
+.count-box p{
+font-size:0.85rem;
+}
+
+/* POPUP */
+
+.popup-content{
+width:92%;
+padding:40px 16px;
+}
+
+.popup-content h1{
+font-size:2.5rem !important;
+line-height:1.2;
+}
+
+.popup-content h2{
+font-size:4rem !important;
+line-height:1;
+}
+
+/* MEMORY SECTION */
+
+.memories-section{
+padding:70px 16px;
+}
+
+.memories-section h1{
+font-size:2.4rem;
+line-height:1.2;
+}
+
+.gallery{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.gallery img{
+height:240px;
+object-fit:cover;
+}
+
+/* WISH SECTION */
+
+.wish-section{
+padding:70px 16px;
+}
+
+.wish-section h1{
+font-size:2.4rem;
+line-height:1.2;
+}
+
+.wish-box{
+flex-direction:column;
+gap:15px;
+}
+
+.wish-box input{
+width:100%;
+}
+
+.wish-box button{
+width:100%;
+}
+
+/* FINAL SECTION */
+
+.final-section{
+padding:70px 16px;
+}
+
+.final-section h1{
+font-size:2.8rem !important;
+line-height:1.2;
+}
+
+.final-section h2{
+font-size:1.8rem;
+}
+
+.final-section p{
+font-size:1rem;
+line-height:1.8;
+}
+
+/* FLOATING EMOJIS */
+
+.floating-emoji{
+font-size:20px !important;
+opacity:0.45;
+}
+
+.final-emoji{
+font-size:20px;
+}
+
+/* CURSOR OFF */
+
+.cursor-glow{
+display:none;
 }
 
 }
+
 }
