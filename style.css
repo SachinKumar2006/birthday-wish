@@ -747,7 +747,7 @@ z-index:2;
 .popup-content p{
 font-size:1.2rem;
 line-height:2;
-color:#f1f1f1;
+color:#53d07d;
 max-width:800px;
 margin:auto;
 margin-bottom:40px;
@@ -873,6 +873,150 @@ transform:translateY(-120vh);
 opacity:0;
 }
 }
+
+/* =========================================
+   DESKTOP FIX
+========================================= */
+
+.cake-area{
+position:relative;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+margin-top:80px;
+width:100%;
+}
+
+.cake{
+position:relative;
+width:320px;
+height:240px;
+background:linear-gradient(180deg,#6500a5,#32004f);
+border-radius:35px 35px 100px 100px;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+box-shadow:
+0 0 40px rgba(255,170,0,.45),
+0 0 90px rgba(255,170,0,.25);
+margin:0 auto;
+}
+
+/* CAKE TOP */
+
+.cake-top{
+position:absolute;
+top:-14px;
+left:0;
+width:100%;
+height:32px;
+background:linear-gradient(90deg,#ffe66d,#ffb300);
+border-radius:50%;
+}
+
+/* CAKE TEXT */
+
+.cake-text{
+position:absolute;
+top:120px;
+left:50%;
+transform:translateX(-50%);
+width:100%;
+text-align:center;
+font-size:2.3rem;
+line-height:1.4;
+padding:0 10px;
+color:#ffe066;
+font-family:'Poppins',sans-serif;
+}
+
+/* CANDLES */
+
+.candles{
+position:absolute;
+top:45px;
+left:50%;
+transform:translateX(-50%);
+display:flex;
+gap:32px;
+z-index:10;
+}
+
+.candle{
+width:18px;
+height:70px;
+background:white;
+border-radius:20px;
+position:relative;
+}
+
+.flame{
+position:absolute;
+top:-20px;
+left:50%;
+transform:translateX(-50%);
+width:24px;
+height:24px;
+background:orange;
+border-radius:50%;
+box-shadow:
+0 0 18px orange,
+0 0 35px gold;
+}
+
+/* KNIFE */
+
+.knife{
+position:absolute;
+top:130px;
+right:800px;
+width:170px;
+height:12px;
+background:white;
+border-radius:20px;
+transform:rotate(-20deg);
+display:block !important;
+z-index:100;
+box-shadow:0 0 20px rgba(255,255,255,.4);
+}
+
+.knife::after{
+content:'';
+position:absolute;
+right:-24px;
+top:-12px;
+width:45px;
+height:36px;
+background:#5a3200;
+border-radius:10px;
+}
+
+/* BUTTON */
+
+#celebrateBtn{
+margin-top:60px;
+padding:20px 55px;
+font-size:1.1rem;
+border-radius:50px;
+}
+
+/* DESKTOP HAPPY BIRTHDAY */
+
+.birthday-text{
+font-size:5rem;
+line-height:1.2;
+letter-spacing:4px;
+text-align:center;
+}
+
+.main-name{
+font-size:8rem;
+line-height:1;
+text-align:center;
+}
+
 /* =========================================
    FINAL MOBILE CSS
 ========================================= */
