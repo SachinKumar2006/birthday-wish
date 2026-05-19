@@ -873,92 +873,8 @@ transform:translateY(-120vh);
 opacity:0;
 }
 }
-
-/* RESPONSIVE */
-
-@media(max-width:768px){
-
-nav{
-padding:20px;
-}
-
-.birthday-text{
-font-size:2.5rem;
-}
-
-.main-name{
-font-size:4rem;
-}
-
-.cake{
-width:320px;
-height:200px;
-}
-
-.cake-text{
-font-size:1.6rem;
-}
-
-.knife{
-display:none;
-}
-
-.memories-section h1,
-.wish-section h1,
-.final-section h1{
-font-size:2.5rem;
-}
-
-.gallery{
-grid-template-columns:1fr;
-}
-
-.gallery img{
-height:280px;
-}
-
-.wish-box{
-flex-direction:column;
-}
-
-.wish-box input{
-width:100%;
-}
-
-.final-section h2{
-font-size:2rem;
-}
-
-.popup-content h1{
-font-size:5rem;
-font-family:'Orbitron',sans-serif;
-font-weight:900;
-letter-spacing:6px;
-
-display:flex;
-justify-content:center;
-align-items:center;
-gap:25px;
-
-background:none;
--webkit-background-clip:unset;
--webkit-text-fill-color:unset;
-
-color:#ffffff;
-
-text-shadow:
-0 0 10px rgba(255,255,255,0.3),
-0 0 25px rgba(255,255,255,0.2);
-
-margin-bottom:20px;
-position:relative;
-z-index:2;
-}
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
 /* =========================================
-   FINAL MOBILE PERFECT FIX
+   FINAL MOBILE CSS
 ========================================= */
 
 @media screen and (max-width:768px){
@@ -967,117 +883,203 @@ body{
 overflow-x:hidden;
 }
 
-/* HERO SECTION */
+/* NAVBAR */
+
+nav{
+padding:18px;
+}
+
+.logo{
+font-size:2rem;
+}
+
+.music-btn{
+padding:14px 24px;
+font-size:1rem;
+}
+
+/* HERO */
 
 .hero{
-padding:40px 14px 30px;
+padding:40px 16px 60px;
+text-align:center;
 overflow:hidden;
 }
 
 /* HAPPY BIRTHDAY */
 
 .birthday-text{
-font-size:2.8rem !important;
-line-height:1.05;
-letter-spacing:1px;
+font-size:3rem;
+line-height:1.1;
+letter-spacing:2px;
 word-break:normal;
-overflow-wrap:normal;
-white-space:normal;
-text-align:center;
-max-width:100%;
 }
 
-/* SACHIN */
+/* NAME */
 
 .main-name{
-font-size:4rem !important;
+font-size:4.5rem;
 line-height:1;
-word-break:normal;
-overflow-wrap:normal;
-white-space:normal;
-max-width:100%;
-text-align:center;
-margin-top:20px;
+margin-top:15px;
 }
 
 /* TAGLINE */
 
 .tagline{
-font-size:0.95rem;
-line-height:1.8;
-padding:0 10px;
-margin-top:18px;
+font-size:1rem;
+line-height:1.7;
+margin-top:20px;
 }
 
 /* MESSAGE */
 
 .hero-message{
 font-size:1rem;
-line-height:1.8;
-padding:0 12px;
-margin-top:20px;
+line-height:1.9;
+margin-top:25px;
+padding:0 5px;
 }
 
-/* CAKE */
+/* CAKE AREA */
 
 .cake-area{
-margin-top:40px;
+position:relative;
+margin-top:50px;
 display:flex;
 justify-content:center;
 align-items:center;
 flex-direction:column;
 }
 
+/* CAKE */
+
 .cake{
-width:280px;
-height:190px;
-border-radius:25px 25px 70px 70px;
 position:relative;
+width:280px;
+height:220px;
+background:linear-gradient(180deg,#6500a5,#32004f);
+border-radius:30px 30px 80px 80px;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+box-shadow:
+0 0 30px rgba(255,170,0,.45),
+0 0 70px rgba(255,170,0,.2);
 }
+
+/* CAKE TOP */
 
 .cake-top{
+position:absolute;
+top:-12px;
+left:0;
+width:100%;
 height:28px;
-top:-14px;
+background:linear-gradient(90deg,#ffe66d,#ffb300);
+border-radius:50%;
 }
 
+/* CAKE TEXT */
+
 .cake-text{
-font-size:1.7rem;
-top:78px;
+position:absolute;
+top:110px;
+left:50%;
+transform:translateX(-50%);
+width:100%;
+text-align:center;
+font-size:1.8rem;
 line-height:1.4;
+padding:0 10px;
+color:#ffe066;
 }
 
 /* CANDLES */
 
 .candles{
-top:-60px;
+position:absolute;
+top:35px;
+left:50%;
+transform:translateX(-50%);
+display:flex;
 gap:24px;
 }
 
 .candle{
-height:50px;
 width:16px;
+height:55px;
+background:white;
+border-radius:20px;
+position:relative;
+}
+
+.flame{
+position:absolute;
+top:-18px;
+left:50%;
+transform:translateX(-50%);
+width:22px;
+height:22px;
+background:orange;
+border-radius:50%;
+box-shadow:
+0 0 15px orange,
+0 0 30px gold;
 }
 
 /* KNIFE */
 
 .knife{
-display:block !important;
+position:absolute;
+top:120px;
+right:-40px;
 width:110px;
 height:10px;
-right:-10px;
-top:110px;
-z-index:20;
+background:white;
+border-radius:20px;
+transform:rotate(-20deg);
+display:block !important;
+z-index:100;
+}
+
+.knife::after{
+content:'';
+position:absolute;
+right:-15px;
+top:-10px;
+width:30px;
+height:30px;
+background:#5a3200;
+border-radius:10px;
 }
 
 /* BUTTON */
 
 #celebrateBtn{
-width:90%;
+width:92%;
 max-width:320px;
 padding:18px;
 font-size:1rem;
-margin-top:35px;
+margin-top:45px;
 border-radius:50px;
+}
+
+/* POPUP */
+
+.popup-content{
+width:92%;
+padding:40px 18px;
+}
+
+.popup-content h1{
+font-size:2.7rem;
+line-height:1.2;
+}
+
+.popup-content h2{
+font-size:4rem;
+line-height:1;
 }
 
 /* COUNTDOWN */
@@ -1086,7 +1088,6 @@ border-radius:50px;
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:15px;
-justify-items:center;
 }
 
 .count-box{
@@ -1098,35 +1099,18 @@ height:110px;
 font-size:2.5rem;
 }
 
-.count-box p{
-font-size:0.85rem;
-}
+/* MEMORY */
 
-/* POPUP */
-
-.popup-content{
-width:92%;
-padding:40px 16px;
-}
-
-.popup-content h1{
-font-size:2.5rem !important;
-line-height:1.2;
-}
-
-.popup-content h2{
-font-size:4rem !important;
-line-height:1;
-}
-
-/* MEMORY SECTION */
-
-.memories-section{
+.memories-section,
+.wish-section,
+.final-section{
 padding:70px 16px;
 }
 
-.memories-section h1{
-font-size:2.4rem;
+.memories-section h1,
+.wish-section h1,
+.final-section h1{
+font-size:2.5rem;
 line-height:1.2;
 }
 
@@ -1137,46 +1121,24 @@ gap:20px;
 
 .gallery img{
 height:240px;
-object-fit:cover;
 }
 
-/* WISH SECTION */
-
-.wish-section{
-padding:70px 16px;
-}
-
-.wish-section h1{
-font-size:2.4rem;
-line-height:1.2;
-}
+/* WISH */
 
 .wish-box{
 flex-direction:column;
 gap:15px;
 }
 
-.wish-box input{
-width:100%;
-}
-
+.wish-box input,
 .wish-box button{
 width:100%;
 }
 
-/* FINAL SECTION */
-
-.final-section{
-padding:70px 16px;
-}
-
-.final-section h1{
-font-size:2.8rem !important;
-line-height:1.2;
-}
+/* FINAL */
 
 .final-section h2{
-font-size:1.8rem;
+font-size:2rem;
 }
 
 .final-section p{
@@ -1184,23 +1146,17 @@ font-size:1rem;
 line-height:1.8;
 }
 
-/* FLOATING EMOJIS */
+/* FLOATING */
 
 .floating-emoji{
-font-size:20px !important;
-opacity:0.45;
-}
-
-.final-emoji{
 font-size:20px;
+opacity:.45;
 }
 
-/* CURSOR OFF */
+/* CURSOR */
 
 .cursor-glow{
 display:none;
-}
-
 }
 
 }
