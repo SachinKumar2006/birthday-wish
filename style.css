@@ -1243,17 +1243,17 @@ height:110px;
 font-size:2.5rem;
 }
 .cut-message{
-width:85% !important;
-max-width:320px !important;
+width:92% !important;
+max-width:420px !important;
 
-padding:25px 20px !important;
+padding:22px 28px !important;
 
-font-size:1.15rem !important;
-line-height:1.7 !important;
+font-size:1.25rem !important;
+line-height:1.8 !important;
 
 text-align:center !important;
 
-border-radius:28px !important;
+border-radius:30px !important;
 
 left:50% !important;
 top:50% !important;
