@@ -1242,14 +1242,26 @@ height:110px;
 .count-box h3{
 font-size:2.5rem;
 }
-.message{
+.cut-message{
 width:85% !important;
 max-width:320px !important;
+
 padding:25px 20px !important;
-font-size:1.2rem !important;
+
+font-size:1.15rem !important;
 line-height:1.7 !important;
+
 text-align:center !important;
+
 border-radius:28px !important;
+
+left:50% !important;
+top:50% !important;
+
+transform:translate(-50%,-50%) !important;
+
+word-break:normal !important;
+overflow-wrap:break-word !important;
 }
 /* MEMORY */
 
