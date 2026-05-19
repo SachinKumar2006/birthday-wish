@@ -877,11 +877,90 @@ opacity:0;
 }
 }
 
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+nav{
+padding:20px;
+}
+
+.birthday-text{
+font-size:2.5rem;
+}
+
+.main-name{
+font-size:4rem;
+}
+
+.cake{
+width:320px;
+height:200px;
+}
+
+.cake-text{
+font-size:1.6rem;
+}
+
+.knife{
+display:none;
+}
+
+.memories-section h1,
+.wish-section h1,
+.final-section h1{
+font-size:2.5rem;
+}
+
+.gallery{
+grid-template-columns:1fr;
+}
+
+.gallery img{
+height:280px;
+}
+
+.wish-box{
+flex-direction:column;
+}
+
+.wish-box input{
+width:100%;
+}
+
+.final-section h2{
+font-size:2rem;
+}
+
+.popup-content h1{
+font-size:5rem;
+font-family:'Orbitron',sans-serif;
+font-weight:900;
+letter-spacing:6px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+gap:25px;
+
+background:none;
+-webkit-background-clip:unset;
+-webkit-text-fill-color:unset;
+
+color:#ffffff;
+
+text-shadow:
+0 0 10px rgba(255,255,255,0.3),
+0 0 25px rgba(255,255,255,0.2);
+
+margin-bottom:20px;
+position:relative;
+z-index:2;
+}
 /* =========================
    MOBILE RESPONSIVE
 ========================= */
-
-@media(max-width:768px){
+@media screen and (max-width:768px){
 
 body{
 overflow-x:hidden;
@@ -890,75 +969,67 @@ overflow-x:hidden;
 /* NAVBAR */
 
 nav{
-padding:18px 16px;
+padding:16px 14px;
+gap:10px;
 }
 
 .logo{
-font-size:2rem;
+font-size:1.8rem;
 }
 
 .music-btn{
-padding:12px 22px;
-font-size:1rem;
+padding:12px 18px;
+font-size:0.95rem;
+border-radius:40px;
 }
 
 /* HERO */
 
 .hero{
-padding:70px 16px 40px;
+padding:60px 15px 40px;
 min-height:auto;
 }
 
 .birthday-text{
-font-size:4rem;
+font-size:3.4rem !important;
 line-height:1.1;
 letter-spacing:2px;
-text-align:center;
 word-break:break-word;
 }
 
 .main-name{
-font-size:5.2rem;
-line-height:1;
-margin-top:20px;
+font-size:5rem !important;
+line-height:0.95;
+margin-top:15px;
 word-break:break-word;
 }
 
 .tagline{
 font-size:1rem;
-line-height:1.8;
+line-height:1.7;
 letter-spacing:2px;
-padding:0 10px;
+padding:0 8px;
 }
 
 .hero-message{
-font-size:1.05rem;
-line-height:2;
+font-size:1rem;
+line-height:1.9;
 padding:0 10px;
-margin-top:25px;
-}
-
-/* FLOATING EMOJIS */
-
-.floating-emoji{
-font-size:24px !important;
-opacity:0.45;
-z-index:0;
-}
-
-/* CAKE AREA */
-
-.cake-area{
-margin-top:50px;
+margin-top:20px;
 }
 
 /* CAKE */
+
+.cake-area{
+margin-top:45px;
+}
 
 .cake{
 width:92%;
 max-width:320px;
 height:210px;
 border-radius:25px 25px 80px 80px;
+overflow:visible;
 }
 
 .cake-top{
@@ -967,13 +1038,10 @@ top:-18px;
 }
 
 .cake-text{
-font-size:2rem;
+font-size:1.9rem;
 top:85px;
-line-height:1.5;
 padding:0 10px;
 }
-
-/* CANDLES */
 
 .candles{
 top:-70px;
@@ -981,16 +1049,15 @@ gap:28px;
 }
 
 .candle{
-width:13px;
-height:58px;
+height:55px;
 }
 
 /* KNIFE */
 
 .knife{
-display:block;
+display:block !important;
 width:120px;
-height:12px;
+height:10px;
 right:-20px;
 top:105px;
 z-index:10;
@@ -999,39 +1066,32 @@ z-index:10;
 /* BUTTON */
 
 #celebrateBtn{
-margin-top:40px;
 width:92%;
 max-width:350px;
-padding:18px 20px;
+padding:18px;
 font-size:1rem;
+margin-top:40px;
 }
 
-/* MEMORIES */
+/* MEMORY SECTION */
 
 .memories-section{
 padding:80px 16px;
 }
 
 .memories-section h1{
-font-size:3rem;
+font-size:2.8rem;
 line-height:1.2;
 }
-
-.memories-section p{
-font-size:1rem;
-margin-top:12px;
-}
-
-/* GALLERY */
 
 .gallery{
 grid-template-columns:1fr;
 gap:22px;
-margin-top:45px;
+margin-top:40px;
 }
 
 .gallery img{
-height:250px;
+height:240px;
 border-radius:24px;
 }
 
@@ -1042,14 +1102,13 @@ padding:80px 16px;
 }
 
 .wish-section h1{
-font-size:3rem;
+font-size:2.8rem;
 line-height:1.2;
 }
 
 .wish-box{
 flex-direction:column;
-gap:18px;
-margin-top:35px;
+gap:16px;
 }
 
 .wish-box input{
@@ -1061,7 +1120,6 @@ font-size:1rem;
 .wish-box button{
 width:100%;
 padding:18px;
-font-size:1rem;
 }
 
 #wishContainer{
@@ -1077,15 +1135,15 @@ min-height:auto;
 }
 
 .final-section h1{
-font-size:3.5rem;
+font-size:3.2rem !important;
 line-height:1.2;
 letter-spacing:2px;
 }
 
 .final-section p{
-font-size:1.05rem;
-line-height:2;
-margin-top:15px;
+font-size:1rem;
+line-height:1.9;
+padding:0 10px;
 }
 
 .final-section h2{
@@ -1093,22 +1151,15 @@ font-size:2rem;
 margin-top:20px;
 }
 
-/* FINAL EMOJIS */
-
-.final-emoji{
-font-size:24px;
-opacity:0.5;
-}
-
 /* POPUP */
 
 .popup-content{
+width:94%;
 padding:45px 18px;
 border-radius:30px;
-width:94%;
 }
 
-/* POPUP COUNTDOWN */
+/* COUNTDOWN */
 
 .popup-countdown{
 display:grid;
@@ -1121,61 +1172,53 @@ margin-bottom:35px;
 width:120px;
 height:120px;
 margin:auto;
-border-radius:28px;
 }
 
 .count-box h3{
-font-size:3rem;
+font-size:2.8rem;
 }
 
 .count-box p{
-font-size:0.95rem;
-letter-spacing:2px;
+font-size:0.9rem;
 }
 
-/* POPUP HAPPY BIRTHDAY */
+/* POPUP TITLE */
 
 .popup-content h1{
-font-size:3.3rem;
+font-size:3rem !important;
 line-height:1.2;
 letter-spacing:2px;
-display:block;
-text-align:center;
 }
-
-/* POPUP NAME */
 
 .popup-content h2{
-font-size:5rem;
+font-size:4.8rem !important;
 line-height:1;
 letter-spacing:2px;
-margin-top:20px;
 }
-
-/* POPUP MESSAGE */
 
 .popup-content p{
 font-size:1rem;
 line-height:1.9;
-padding:0 8px;
+padding:0 5px;
 }
-
-/* POPUP BUTTON */
 
 .popup-content button{
 width:90%;
 max-width:320px;
-padding:18px 20px;
+padding:18px;
 font-size:1rem;
 }
 
-/* CUT MESSAGE */
+/* FLOATING EMOJIS */
 
-.cut-message{
-width:90%;
-font-size:1rem;
-padding:22px;
-line-height:1.8;
+.floating-emoji{
+font-size:22px !important;
+opacity:0.45;
+}
+
+.final-emoji{
+font-size:22px;
+opacity:0.5;
 }
 
 /* CURSOR */
@@ -1186,3 +1229,4 @@ display:none;
 
 }
 
+}
